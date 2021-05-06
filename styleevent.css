@@ -1,0 +1,12 @@
+.content h1{
+    text-align: center;
+    color: chocolate;
+}
+
+.content h4, .content h2{
+    margin-left: 300px;
+}
+
+.content h2{
+    color: chocolate;
+}

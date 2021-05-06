@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Booking ticket online</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>  
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>     
+     <script src="js/jquery-1.11.1.min.js"></script> 
+     <link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"><script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+
+     
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+     <link rel="stylesheet" href="css/animate.css">
+     
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+ 
+ 
+     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+     <link rel="stylesheet" href="css/jquery.timepicker.css">
+ 
+     <link rel="stylesheet" href="css/flaticon.css">
+     <link rel="stylesheet" href="css/style.css">
+     <style>
+        h3{
+            text-align:center;
+            padding-bottom: 3%;
+            color:rgb(36, 160, 36);
+            font-weight:bold
+        }
+
+     </style>
+     <script>
+        $(document).ready(function(){
+            $("#form-horizontal").bootstrapValidator({
+                  container: '#Thongbaoloi',
+                  excluded: 'disable',
+                  fields: {
+                    fullname: {
+                          validators: {
+                              notEmpty:{
+                                  message: '*  Full name is empty'
+                              },
+                              regexp: {
+                                  regexp: /^[A-Z\s]+$/i,
+                                  message: 'Full name must include a-Z'
+                              }
+                          }
+                      },
+                      lastname: {
+                          validators: {
+                              notEmpty:{
+                                  message: '*  Last name is empty'
+                              },
+                              regexp: {
+                                  regexp: /^[A-Z\s]+$/i,
+                                  message: 'last name must include a-Z'
+                              }
+                          }
+  
+                      },
+                      Country: {
+                          validators: {
+                              notEmpty:{
+                                  message: '* Please choose your country'
+                              },
+                          }
+  
+                      },
+  
+                      Mail: {
+                          validators: {
+                              notEmpty:{
+                                  message: '* Email is empty'
+                              },
+                              emailAddress:{
+                                  message: '* please enter type name@gmail.com'
+                              }
+                          }
+  
+                      },
+                      
+                      Phonenum: {
+                          validators: {
+                              notEmpty:{
+                                  message: '* Phone number is empty'
+                              },
+                              regexp:{
+                                  regexp: /^([0-9]{8,12})+$/i,
+                                  message: '* Wrong number'
+                              }
+                          }
+  
+                      }
+  
+                  },
+  
+            });
+        });
+       
+        $(function () {  
+            $("#datepicker").datepicker({         
+            autoclose: true,         
+            todayHighlight: true 
+            }).datepicker('update', new Date());
+            });
+    </script>
+ </head>
+ <body>
+   <!--=============================================TOPNAV====================================================================-->
+   <div class="wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <p class="mb-0 phone pl-md-2">
+                    <a href="tel:0834414411" class="mr-2"><span class="fa fa-phone mr-1"></span> 083 441 4411</a> 
+                    <a href="mailto:YKV2021@gmail.com"><span class="fa fa-paper-plane mr-1"></span> YKV2021@gmail.com</a>
+                    <a href="#">&ensp; Opening: 7 am to 23 pm</a>
+
+                </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-end">
+                <div class="social-media">
+                <p class="mb-0 d-flex">
+                    <a href="https://www.facebook.com/" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                    <a href="https://twitter.com/" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                    <a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                </p>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================================LIST ITEM==============================================================-->
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	<div class="container">
+		<a class="navbar-brand" href="index.html"></span>Nexus Aquarius</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="fa fa-bars"></span> Menu
+	  </button>
+	  <div class="collapse navbar-collapse" id="ftco-nav">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+		  <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+		  <li class="nav-item active"><a href="ticket.html" class="nav-link">Ticket</a></li>
+          <li class="nav-item"><a href="event.html" class="nav-link">Event</a></li>
+		  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="feedback.html" class="nav-link">Feedback</a></li>
+
+		</ul>
+	  </div>
+	</div>
+  </nav>
+  <!--=================================FORM====================================================================-->
+    <div class="container" style="padding:3%">
+      
+        <h3><i>* VIP guests can come at any time without buying a ticket</i></h3>
+      
+          <form id="form-horizontal" class="form-horizontal" action="payment.html">
+           <div  class="form-group">
+            <label class="control-label col-lg-3" for="email" required autofocus>Full Name</label>
+              <div class="col-lg-7">
+                <input type="fullname" class="form-control" id="mail" name="fullname" placeholder="Enter your full name">
+              </div> 
+          </div>
+          <div  class="form-group">
+                <label class="control-label col-lg-3" for="email">Email</label>
+                <div class="col-lg-7">
+                    <input type="email" class="form-control" id="mail" name="Mail" placeholder="Enter email">
+                </div> 
+              </div>
+          <div class="form-group">
+           <label class="control-label col-lg-3" for="password">Telephone</label>
+              <div class="col-lg-7">
+               <input type="tel"class="form-control" id="phone" name="Phonenum" placeholder="Enter phone number">
+              </div> 
+          </div>
+          <div class="form-group">
+            <label class="control-label col-lg-3" for="password">Pickdate</label>
+               <div class="col-lg-7">
+                <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy"> <input class="form-control" readonly="" type="text"> <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> 
+                </div>
+               </div>
+           </div>
+           <div  class="form-group">
+            <label class="control-label col-lg-3" for="email">Time</label>
+            <div class="col-lg-7">
+               <select>
+                   <option>8:00 am</option>
+                   <option>9:00 am</option>
+                   <option>10:00 am</option>
+                   <option>11:00 am</option>
+                   <option>12:00 am</option>
+                   <option>1:00 pm</option>
+                   <option>2:00 pm</option>
+                   <option>3:00 pm</option>
+                   <option>4:00 pm</option>
+                   <option>5:00 pm</option>
+                   <option>6:00 pm</option>
+                   <option>7:00 pm</option>
+                   <option>8:00 pm</option>
+                   <option>9:00 pm</option>
+               </select>
+                
+            </div> 
+          </div>
+           <div  class="form-group">
+            <label class="control-label col-lg-3" for="email">Person</label>
+            <div class="col-lg-7">
+                <input type="number">
+            </div> 
+          </div>
+          <div  class="form-group">
+            <label class="control-label col-lg-3" for="email">Type of ticket</label>
+            <div class="col-lg-7">
+                <select>
+                    <option>Retail ticket</option>
+                    <option>Family packages</option>
+                    <option>Student packages</option>
+                    <div  class="form-group">
+            <label class="control-label col-lg-3" for="email">Person</label>
+          </div>
+                </select>
+            </div> 
+          </div>
+          <div class="form-group">
+              <div class="col-lg-offset-3 col-lg-7">
+              <div id="Thongbaoloi"></div>
+              </div>
+          </div>
+         <div class="col-lg-offset-3 col-lg-7">
+           
+           <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span>  Payment</button>
+          <button type="reset" class="btn btn-warning"><span class="glyphicon glyphicon-remove"></span>  Reset</button>
+         </div>
+         
+            </div> 
+          </div>
+        </form>
+      </div>
+ <!--==========================FOOTER=================================================================================-->
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                <h2 class="footer-heading">About Nexus</h2>
+                <p>Nexus Aquarium is located in city of Washington, which is the one of well known place for tourism. Aquarium is very huge and comprises of marine life animals and they are fed and breeding. It is the big centre for organizing the school events for the purpose of study and so on.</p>
+                <ul class="ftco-footer-social p-0">
+      <li class="ftco-animate"><a href="twitter.com" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+      <li class="ftco-animate"><a href="facebook.com" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+      <li class="ftco-animate"><a href="instagram.com" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+    </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                <h2 class="footer-heading">Nexus Company</h2>
+     <p>The Nexus company was founded in 2021 by three members<br>- Tran Le Minh Y<br>- Huynh Gia Kiet<br>- Phung Ha Uyen Vy</p>
+            </div>
+            <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+                <h2 class="footer-heading">Quick Links</h2>
+                <ul class="list-unstyled">
+      <li><a href="index.html" class="py-2 d-block">Home</a></li>
+      <li><a href="about.html" class="py-2 d-block">About</a></li>
+      <li><a href="gallery.html" class="py-2 d-block">Libary</a></li>
+      <li><a href="ticket.html" class="py-2 d-block">Buy Tickets</a></li>
+      <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+      <li><a href="feedback.html" class="py-2 d-block">Feedback</a></li>
+    </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                <h2 class="footer-heading">Have a Questions?</h2>
+                <div class="block-23 mb-3">
+      <ul>
+        <li><span class="icon fa fa-map"></span><span class="text">3700 North Capitol St NW, Washington, DC 20011, USA</span></li>
+        <li><a href="tel:0834414411"><span class="icon fa fa-phone"></span><span class="text">083 441 4411</span></a></li>
+        <li><a href="mailto:YKV2021@gmail.com"><span class="icon fa fa-paper-plane"></span><span class="text">YKV2021@gmail.com</span></a></li>
+      </ul>
+    </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+  <div class="col-md-12 text-center">
+    <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by group 03</a></p>
+  </div>
+</div>
+    </div>
+</footer>
+    
+ </body>
+</html>

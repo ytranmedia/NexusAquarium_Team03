@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nexus Aquarium contact </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--========================================API GOOGLE==============================================================-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      function validatEemail() {
+          var x = document.myform.email.value;
+          var atposition = x.indexOf("@");
+          var dotposition = x.lastIndexOf(".");
+          if (atposition < 1 || dotposition < (atposition + 2)
+                  || (dotposition + 2) >= x.length) {
+              alert("Please enter a valid e-mail address.");
+              return false;
+          }
+      }
+  </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* body{
+  background-image:url('images/coverticket.jpg');
+} */
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 50px;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(images/coverticket.jpg);
+    background-size: cover;
+}
+
+.contact .contact
+{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .contact h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .contact p
+{
+    font-weight: 300;
+    color: #fff;
+}
+/*.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}*/
+
+.container .contactinfo
+{
+    width: 100%;
+    display: block;
+    text-align:left;
+    padding-left: 10%
+}
+
+.container .contactinfo .box
+{
+    position: relative;
+    padding: 0px 0;
+    display: flex;
+
+}
+
+.container .contactinfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    
+}
+
+.container .contactinfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactinfo .box .text h3
+{
+   font-weight: 500;
+   color: black;
+
+}
+
+.contactform
+{
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.767);
+    margin-left:0px;
+    border-radius:10px
+}
+
+.contactform h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactform .inputbox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+
+    outline: none;
+    resize: none;
+
+}
+
+.contactform .inputbox span
+{
+    position: relative;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+input[type="submit"]
+{
+    width: 100%;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 18px;
+}
+input[type=submit]:hover{
+  background-color:#666
+}
+.columnside{
+  width: 60%
+}
+.columnmid{
+  width:30%
+}
+
+
+@media (max-width:991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactinfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .contactinfo
+    {
+        width: 50%;
+    }
+    .contactform
+    {
+        width: 120%;
+    }
+}
+.box a{
+  text-decoration: none;
+  color: #fff;
+}
+    </style>
+  </head>
+  <body>
+  <!--=============================================TOPNAV====================================================================-->
+  <div class="wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <p class="mb-0 phone pl-md-2">
+                    <a href="tel:0834414411" class="mr-2"><span class="fa fa-phone mr-1"></span> 083 441 4411</a> 
+                    <a href="mailto:YKV2021@gmail.com"><span class="fa fa-paper-plane mr-1"></span> YKV2021@gmail.com</a>
+                    <a href="#">&ensp; Opening: 7 am to 23 pm</a>
+
+                </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-end">
+                <div class="social-media">
+                <p class="mb-0 d-flex">
+                    <a href="https://www.facebook.com/" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                    <a href="https://twitter.com/" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                    <a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                </p>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================================LIST ITEM==============================================================-->
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	    	<a class="navbar-brand" href="index.html"></span>Contact us</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+	          <li class="nav-item"><a href="ticket.html" class="nav-link">Ticket</a></li>
+            <li class="nav-item"><a href="event.html" class="nav-link">Event</a></li>
+	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+			  <li class="nav-item"><a href="feedback.html" class="nav-link">Feedback</a></li>
+			  
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+<!-- ====================================END NAV==================================================================== -->
+
+
+
+<!--contact-->
+    <section class="contact">
+ <div class="row">
+  <div class="columnside">
+    <div class="contactform">
+      <form name="myform" method="post" action="#" onsubmit="return validatEemail();">
+          <h2>Send Message</h2>
+          <div class="inputbox">
+              <input type="text" name="" required="required">
+              <span>Full Name</span>
+          </div>
+
+          <div class="inputbox">
+              <input type="text" name="email" required="required">
+              <span>Email</span>
+          </div>
+
+
+          <div class="inputbox">
+              <textarea required="required"></textarea>
+              <span>Type your Message...</span>
+          </div>
+
+          <div class="inputbox">
+              <a href="#"><input type="submit" name="" value="Send message"></a>
+          </div>
+      </form>
+  </div>
+  </div>
+  <div class="columnmid" >
+    <div class="container">
+      <div class="contactinfo">
+          <div class="box">
+              <div class="icon"><i class="fa fa-map-marker"></i></div>
+              <div class="text">
+                  <h3 style="color:#fff">Adress</h3>
+                  <p>3700 North Capitol St NW,<br> Washington,<br> DC 20011, USA</p>
+              </div>
+          </div>
+
+          <div class="box">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <div class="text">
+                  <h3 style="color:#fff">Phone</h3>
+                  <p>083 441 4411 </p>
+              </div>
+          </div>
+
+          <div class="box">
+              <div class="icon"><i class="fa fa-paper-plane"></i></div>
+              <div class="text">
+                  <h3 style="color:#fff">Email</h3>
+                  <p><a href="mailto:YKV2021@gmail.com"><p>YKV2021@gmail.</a></p>
+              </div>
+          </div>
+      </div>
+  </div></div>
+ </div>
+               
+        
+
+    </section>
+
+
+    <!--map-->
+    <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.4605523110636!2d-77.01320268426018!3d38.93630575225404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c8082f97f80f%3A0xdde9805a75939aa8!2s3700%20North%20Capitol%20St%20NW%2C%20Washington%2C%20DC%2020011%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1619263801689!5m2!1svi!2s"
+       width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    
+       <!--==========================FOOTER=================================================================================-->
+    <footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">About Nexus</h2>
+						<p>Nexus Aquarium is located in city of Washington, which is the one of well known place for tourism. Aquarium is very huge and comprises of marine life animals and they are fed and breeding. It is the big centre for organizing the school events for the purpose of study and so on.</p>
+						<ul class="ftco-footer-social p-0">
+              <li class="ftco-animate"><a href="twitter.com" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="facebook.com" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="instagram.com" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">Nexus Company</h2>
+             <p>The Nexus company was founded in 2021 by three members<br>- Tran Le Minh Y<br>- Huynh Gia Kiet<br>- Phung Ha Uyen Vy</p>
+					</div>
+					<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+						<h2 class="footer-heading">Quick Links</h2>
+						<ul class="list-unstyled">
+              <li><a href="index.html" class="py-2 d-block">Home</a></li>
+              <li><a href="about.html" class="py-2 d-block">About</a></li>
+              <li><a href="gallery.html" class="py-2 d-block">Libary</a></li>
+              <li><a href="ticket.html" class="py-2 d-block">Buy Tickets</a></li>
+              <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+			  <li><a href="feedback.html" class="py-2 d-block">Feedback</a></li>
+            </ul>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon fa fa-map"></span><span class="text">3700 North Capitol St NW, Washington, DC 20011, USA</span></li>
+                <li><a href="tel:0834414411"><span class="icon fa fa-phone"></span><span class="text">083 441 4411</span></a></li>
+                <li><a href="mailto:YKV2021@gmail.com"><span class="icon fa fa-paper-plane"></span><span class="text">YKV2021@gmail.com</span></a></li>
+              </ul>
+            </div>
+					</div>
+				</div>
+				<div class="row mt-5">
+          <div class="col-md-12 text-center">
+            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by group 03</a></p>
+          </div>
+        </div>
+			</div>
+		</footer>
+    
+      
+    
+    
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <!--===========================================CHÈN SCRIPT====================================================-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+      
+      </body>
+      </html>
